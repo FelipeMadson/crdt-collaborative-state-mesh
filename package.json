@@ -1,0 +1,26 @@
+{
+  "name": "crdt-collaborative-state-mesh",
+  "version": "1.0.0",
+  "description": "Decentralized Conflict-Free Replicated Data Type Mesh with Vector Clocks, RGA Text Sequencing, and Delta Synchronization",
+  "author": "Felipe Madison",
+  "license": "MIT",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "start": "node --experimental-strip-types src/server.ts"
+  },
+  "keywords": [
+    "crdt",
+    "vector-clock",
+    "distributed-systems",
+    "collaborative-editing",
+    "p2p-mesh",
+    "eventual-consistency",
+    "zero-dependencies"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
