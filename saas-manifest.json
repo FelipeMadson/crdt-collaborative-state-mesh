@@ -1,0 +1,31 @@
+{
+  "name": "CRDT Collaborative State Mesh",
+  "slug": "crdt-collaborative-state-mesh",
+  "archetype": "api-gateway-platform",
+  "version": "1.0.0",
+  "generatedAt": "2026-10-29T20:20:00.000Z",
+  "frontendStack": "Swiss-Editorial Collaborative Topology Visualizer (Vector Clock Lattice, Live Delta Replay)",
+  "backendStack": "TypeScript CRDT Mesh Node (PN-Counter, LWW-Set, RGA Sequencing, Zero Dependencies)",
+  "features": [
+    "State-Based Bounded Join-Semilattices (Commutative, Associative, Idempotent)",
+    "Monotonic Positive-Negative Counter (PN-Counter)",
+    "Last-Write-Wins Element Set (LWW-Element-Set) with Tie-Breaker Resolution",
+    "Replicated Growable Array (RGA) for Collaborative Rich-Text Sequences",
+    "Vector Clock Causality Tracking & Concurrency Dominance Detection",
+    "Multi-Master Network Split & Partition Healing without Distributed Locks",
+    "Autonomous Prometheus Telemetry Daemon (GET /metrics)"
+  ],
+  "artifacts": [
+    { "path": "src/vector-clock.ts", "isExecutable": false },
+    { "path": "src/pn-counter.ts", "isExecutable": false },
+    { "path": "src/lww-set.ts", "isExecutable": false },
+    { "path": "src/rga-sequence.ts", "isExecutable": false },
+    { "path": "src/mesh-node.ts", "isExecutable": false },
+    { "path": "src/server.ts", "isExecutable": true },
+    { "path": "tests/vector-clock.test.ts", "isExecutable": true },
+    { "path": "tests/crdt-primitives.test.ts", "isExecutable": true },
+    { "path": "tests/rga-sequence.test.ts", "isExecutable": true },
+    { "path": "tests/mesh-network.test.ts", "isExecutable": true },
+    { "path": "tests/server.test.ts", "isExecutable": true }
+  ]
+}
